@@ -11,7 +11,8 @@ var Metric = require('./server/controllers/metric');
 
 
 
-var port = 4000;
+const port = process.env.PORT || 4000;
+
 var log = morgan('dev');
 var bodyParserJSON = bodyParser.json();
 var bodyParserURLEncoded = bodyParser.urlencoded({extended:true});
