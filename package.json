@@ -4,7 +4,8 @@
   "description": "thermelgy core api's",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "node server.js",
+    "build": "webpack" // This command will automatically run on deployment
   },
   "author": "Sridharan Murugadass",
   "license": "ISC",
