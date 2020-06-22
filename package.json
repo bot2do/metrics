@@ -4,8 +4,7 @@
   "description": "thermelgy core api's",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "public" 
+    "start": "node server.js"
   },
   "author": "Sridharan Murugadass",
   "license": "ISC",
