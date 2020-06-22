@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack" 
+    "build": "public" 
   },
   "author": "Sridharan Murugadass",
   "license": "ISC",
