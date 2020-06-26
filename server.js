@@ -13,7 +13,7 @@ var Metric = require('./server/controllers/metric');
 
 
 
-var port = config.port;
+const port = process.env.PORT || 4000;
 var log = morgan('dev');
 var bodyParserJSON = bodyParser.json();
 var bodyParserURLEncoded = bodyParser.urlencoded({extended:true});
