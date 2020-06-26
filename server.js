@@ -11,8 +11,9 @@ var Metric = require('./server/controllers/metric');
 
 
 
-const port = process.env.PORT || 4000;
 
+
+var port = config.port;
 var log = morgan('dev');
 var bodyParserJSON = bodyParser.json();
 var bodyParserURLEncoded = bodyParser.urlencoded({extended:true});
@@ -27,10 +28,11 @@ app.use(cookieParser());
 
 app.use('/api',router);
 
-app.use('/', express.static('public'))
+routes.time_range(router,Metric);
+routes.client(router,Metric);
+routes.mtype(router,Metric);
+routes.mid(router,Metric);
 
-
-routes(router,Metric);
 
 app.listen(port, function(request, response){
     console.log("Server is running on "+ port + " port");
