@@ -28,6 +28,9 @@ app.use(bodyParserURLEncoded);
 app.use(cookieParser());
 app.use(cors());
 app.options('*', cors());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
 
 router.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
