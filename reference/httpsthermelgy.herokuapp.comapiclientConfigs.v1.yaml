@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: clientConfigs
+  version: '1.0'
+  description: Client Config End Points
+  contact:
+    name: Thermelgy
+    url: www.thermelgy.com
+servers:
+  - url: 'https://thermelgy.herokuapp.com/api/clientConfigs'
+    description: Client Configs
+paths: {}
+components:
+  schemas: {}
